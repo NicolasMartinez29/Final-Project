@@ -1,0 +1,230 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+html, body {
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura del viewport */
+    display: flex;
+    flex-direction: column; /* Ordena los elementos de forma vertical */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de menú para dispositivos pequeños */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Secciones principales */
+main {
+    flex: 1; /* Expande el main para llenar el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Alinea el texto en el centro */
+}
+
+main section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Listas con puntos */
+ul {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Imagen centrada */
+.center-img {
+    display: block;
+    margin: 50px auto;
+    max-width: 60%; /* Reduce el tamaño máximo de la imagen */
+    border-radius: 8px;
+    height: auto;
+}
+
+/* Pie de página */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilos específicos para la página de "Sobre mí" */
+.about-me-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-me-section .column-left, 
+.about-me-section .column-right {
+    flex: 1;
+    text-align: left;
+}
+
+.about-me-section .column-left h2, 
+.about-me-section .column-right h2 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.about-me-section .column-left p, 
+.about-me-section .column-right ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Diseño responsivo para "Sobre mí" */
+@media (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-section .column-left, 
+    .about-me-section .column-right {
+        width: 100%;
+    }
+}
+
+/* Estilo para la página de Proyectos */
+.project {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto y las imágenes */
+}
+
+.project h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.project p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.project-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Diseño responsivo para Proyectos */
+@media (max-width: 768px) {
+    .project {
+        padding: 15px;
+    }
+
+    .project h2 {
+        font-size: 1.5rem; /* Reduce ligeramente el tamaño del texto */
+    }
+
+    .project-img {
+        max-width: 90%; /* Aumenta el tamaño relativo en pantallas pequeñas */
+    }
+}
+
+.history-img {
+    max-width: 90%; /* Puedes ajustar este valor según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

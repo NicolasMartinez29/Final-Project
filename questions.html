@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <nav id="navbar">
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="questions.html">Questions</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Question 1: What is programming?</h2>
+            <button class="answer-btn" onclick="toggleAnswer(1)">Show Answer</button>
+            <p id="answer-1" class="answer-text">Programming is the process of writing code for computers to perform specific tasks. It is used in the development of applications, websites, video games, and more. Learning programming allows individuals to create digital solutions and automate tasks.</p>
+        </section>
+
+        <section>
+            <h2>Question 2: Why is learning programming important?</h2>
+            <button class="answer-btn" onclick="toggleAnswer(2)">Show Answer</button>
+            <p id="answer-2" class="answer-text">Programming enables the creation of technological solutions, automates tasks, and solves problems more efficiently. Today, it is an essential skill in the job market, as technology is embedded in nearly every industry.</p>
+        </section>
+
+        <section>
+            <h2>Question 3: What programming languages should I learn first?</h2>
+            <button class="answer-btn" onclick="toggleAnswer(3)">Show Answer</button>
+            <p id="answer-3" class="answer-text">The recommended first languages to learn are HTML, CSS, and JavaScript for web development. After mastering these, you can explore languages like Python, Java, and C++ depending on your interests and the field you want to specialize in.</p>
+        </section>
+
+        <section>
+            <h2>Question 4: What are some useful resources for learning programming?</h2>
+            <button class="answer-btn" onclick="toggleAnswer(4)">Show Answer</button>
+            <p id="answer-4" class="answer-text">There are many great resources online to learn programming. Websites like freeCodeCamp, Codecademy, and Khan Academy offer free courses. Additionally, YouTube channels and blogs provide tutorials and tips for beginners to advanced developers.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
